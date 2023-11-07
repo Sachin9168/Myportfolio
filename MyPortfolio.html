@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me!!</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="logo.jpeg" class="logo" />
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi,I'm <span>Sachin Chouhan</span></h1>
+      </div>
+    </div>
+  </div>
+  <!--------------------- about  ------------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="sachinimage.jpeg" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            A dedicated and skilled Computer Science Enginnering graduate
+            seeking a position as Web developer to utilize my proficiency in
+            HTML,CSS,Javacript and Java to create dynamic and user-friendly web
+            applications. Eager to contibue my technical expertise to a
+            dynamic team and help delivwe exceptional digital experiences.
+          </p>
+          <div class="tab-titles">
+            <div class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </div>
+            <div class="tab-links" onclick="opentab('experience')">
+              Experience
+            </div>
+            <div class="tab-links" onclick="opentab('education')">
+              Education
+            </div>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Java Developer</span><br />Desktop Applications</li>
+              <li><span>Web Development</span><br />Web App Development</li>
+              
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2023</span><br />Internship at Bharat Intern</li>
+              
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2019</span><br />High Schooling from Red Rose Convent School Sehore</li>
+              <li><span>2021</span><br />Higher Secondaring Schooling from Kamla Devi Public School Bhopal</li>
+              <li><span>2025</span><br />BTECH in Computer Science from Technocrats Institute Of Technology Bhopal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------------services---------------------------------------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa fa-code"></i>
+          <h2>Web Design</h2>
+          <p>
+            As a skilled Web Designer, I craft compelling digital experiences using HTML and CSS. I excel in creating
+            visually appealing, user-friendly websites with a keen eye for design and functionality.
+          </p>
+        </div>
+        <div>
+          
+          <i class="fa fa-code"></i>
+          <h2>Applications Management</h2>
+          <p>
+            As an adept Application Manager, I excel in overseeing Java-based applications. I ensure seamless operation,
+            troubleshoot issues, and implement enhancements, optimizing performance for maximum efficiency and user
+            satisfaction.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------Portfolio------------------------------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="services-list">
+       
+        <div>
+          <h2>Netflix Website</h2>
+          <p>
+            I designed a Netflix website with HTML and CSS, crafting a user-friendly interface for seamless streaming.
+            Engaging visuals and intuitive navigation enhance the viewing experience.
+          </p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -----------------------------------Contact----------------------------------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa fa-paper-plane"></i>Sachinchouhanrajput9165@gmail.com</p>
+          <p><i class="fa fa-phone-square-alt"></i>+919165542610</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100035353456342" target="_blank"> <i
+              class="fa fa-facebook"></i></a>
+
+          <a href="https://x.com/SachinC64889896?t=xb-nzBBJiKIszARiPWkApg&s=09" target="_blank"> <i class="fa fa-twitter-square"></i></a>
+
+          <a href= "https://instagram.com/_._sachinrajput?igshid=MW9pNGd6Z3hyc214cw==" target="_blank"> <i class="fa fa-instagram"></i></a>
+
+            <a href="https://www.linkedin.com/in/sachinchouhan9165" target="_blank"> <i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Mrssage" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright @ Sachin Chouhan</p>
+    </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+</body>
+</html>
